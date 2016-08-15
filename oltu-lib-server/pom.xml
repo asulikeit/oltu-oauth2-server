@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>oltu-lib-server</artifactId>
   <name>${project.artifactId}</name>
+  <version>${curr.version}</version>
   <packaging>jar</packaging>
 
   <parent>
@@ -30,6 +31,12 @@
 	    <artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
 	    <version>${oltu.version}</version>
 	</dependency>
+	
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>${javax.servlet}</version>
+	</dependency>	
   </dependencies>
 	
 </project>

@@ -10,6 +10,26 @@
   	<version>${curr.version}</version>
   </parent>
   
+  <dependencies>
+	<dependency>
+		<groupId>kr.rootuser.oltu</groupId>
+		<artifactId>oltu-lib-server</artifactId>
+		<version>${curr.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>kr.rootuser.oltu</groupId>
+		<artifactId>oltu-lib-client</artifactId>
+		<version>${curr.version}</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>4.3.2.RELEASE</version>
+	</dependency>
+	
+  </dependencies>
+  
   <build>
     <plugins>
       <plugin>
