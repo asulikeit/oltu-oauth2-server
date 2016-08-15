@@ -2,12 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>oltu-lib-server</artifactId>
   <name>${project.artifactId}</name>
-  <version>${curr.version}</version>
   <packaging>jar</packaging>
 
   <parent>
-  	<groupId>kr.rootuser.oltu</groupId>
-  	<artifactId>oltu-oauth2-server</artifactId>
+  	<groupId>kr.rootuser.oauth2</groupId>
+  	<artifactId>oauth2-server-template</artifactId>
   	<version>${curr.version}</version>
   </parent>  
 
@@ -39,4 +38,5 @@
 	</dependency>	
   </dependencies>
 	
+  <version>${curr.version}</version>
 </project>
