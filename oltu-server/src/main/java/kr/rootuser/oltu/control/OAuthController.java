@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.oltu.oauth2.common.exception.OAuthSystemException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,7 +22,12 @@ public class OAuthController {
 	public @ResponseBody String authorize(final HttpServletRequest request,
 			final HttpServletResponse res) throws IOException {
 		OAuth2Server oauthServer = new OAuth2Server();
-		oauthServer.authorize(request);
+		try {
+			oauthServer.authorize(request);
+		} catch (OAuthSystemException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return null;
 	}
 }

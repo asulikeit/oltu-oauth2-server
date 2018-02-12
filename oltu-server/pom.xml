@@ -12,12 +12,12 @@
   
   <dependencies>
 	<dependency>
-		<groupId>kr.rootuser.oltu</groupId>
+		<groupId>kr.rootuser.oauth2</groupId>
 		<artifactId>oltu-lib-server</artifactId>
 		<version>${curr.version}</version>
 	</dependency>
 	<dependency>
-		<groupId>kr.rootuser.oltu</groupId>
+		<groupId>kr.rootuser.oauth2</groupId>
 		<artifactId>oltu-lib-client</artifactId>
 		<version>${curr.version}</version>
 	</dependency>
